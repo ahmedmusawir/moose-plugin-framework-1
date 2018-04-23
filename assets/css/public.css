@@ -6646,5 +6646,14 @@ a {
 /*=======================================
 =       PUBLIC:  PLUGIN STYLES          =
 =======================================*/
+#mpf-header-box {
+  padding: 3rem 2rem;
+  width: 100%;
+  background-color: #4d4d4d;
+  color: white !important; }
+  #mpf-header-box h3 {
+    color: white; }
+  #mpf-header-box h4 {
+    color: dodgerblue; }
 
 /*# sourceMappingURL=public.css.map */
