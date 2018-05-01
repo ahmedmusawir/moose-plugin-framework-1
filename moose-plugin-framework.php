@@ -4,7 +4,7 @@
  *
  * Plugin Name: Moose Plugin Framework
  * Plugin URI:	https://htmlfivedev.com 
- * Description: Display a short notice above the post content.
+ * Description: Base Code for MPF 1.0. Should be replicated
  * Version: 	1.0
  * Author URI: 	https://www.linkedin.com/in/ahmedmusawir
  * License: 	GPL-2.0+ 
