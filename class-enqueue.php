@@ -3,7 +3,7 @@
 /**
 * MPF Scripts Enqueue Class
 */
-class Enqueue
+class MPFEnqueue
 {
 	
 	function __construct()
@@ -26,7 +26,7 @@ class Enqueue
 		wp_enqueue_style(
 			
 			'moose-post-notice-admin',
-			plugins_url( '/assets/css/admin.css', __FILE__ ),
+			plugins_url( '/assets/dist/css/admin.min.css', __FILE__ ),
 			array(),
 			'1.0'
 
@@ -37,7 +37,7 @@ class Enqueue
 		wp_enqueue_style(
 			
 			'moose-post-notice-public',
-			plugins_url( '/assets/css/public.css', __FILE__ ),
+			plugins_url( '/assets/dist/css/public.min.css', __FILE__ ),
 			array(),
 			'1.0'
 
@@ -50,9 +50,19 @@ class Enqueue
 		wp_enqueue_script(
 			
 			'moose-post-notice-admin',
-			plugins_url( '/assets/js/admin.js', __FILE__ ),
+			plugins_url( '/assets/dist/js/admin.min.js', __FILE__ ),
 			array('jquery'),
 			'1.0'
+
+		);
+
+		wp_enqueue_script(
+			
+			'moose-bootstrap-4',
+			'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js',
+			array('jquery'),
+			'1.0',
+			true
 
 		);
 		
@@ -62,9 +72,20 @@ class Enqueue
 		wp_enqueue_script(
 			
 			'moose-post-notice-public',
-			plugins_url( '/assets/js/public.js', __FILE__ ),
+			plugins_url( '/assets/dist/js/public.min.js', __FILE__ ),
 			array('jquery'),
-			'1.0'
+			'1.0',
+			true
+
+		);
+
+		wp_enqueue_script(
+			
+			'moose-bootstrap-4',
+			'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js',
+			array('jquery'),
+			'1.0',
+			true
 
 		);
 	}	

@@ -1,0 +1,157 @@
+/*=============================
+=            GLOBALS            =
+=============================*/
+
+@import "global";
+// @import "custom";
+
+/*=======================================
+=       PUBLIC:  PLUGIN STYLES          =
+=======================================*/
+
+
+#mpf-header-box {
+	padding: 3rem 2rem;
+	width: 100%;
+	background-color: darken(gray, 20%);
+	color: white !important;
+
+	h3 {
+		color: white;
+	}
+	h4 {
+		color: dodgerblue;
+	}
+	p {
+		color: white;
+	}
+}
+
+.options-content {
+
+	padding-bottom: 3rem;
+	margin-right: 1.5rem;
+
+	.list-group-item {
+		background-color:  lighten($indigo, 40%);
+		// color: white;
+		margin-bottom: 1rem;
+	}
+}
+
+pre {
+	color: white;
+}
+code {
+	background-color: transparent !important;
+}
+.result-box {
+	background-color: black;
+	padding: 2rem;
+}
+
+.post-notice-meta {
+	padding: 3rem 2rem;
+	background-color: dodgerblue;
+	color: white;
+
+	p {
+		color: white;
+	}
+	h4 {
+		color: lighten(dodgerblue, 30%);
+	}
+}
+
+
+/**
+ *
+ * Social Shortcode Block
+ *
+ */
+#MPF-SOCIAL-BLOCK {
+
+	padding: 2rem 2rem;
+	background-color: hotpink;
+	color: white;
+
+	@media (max-width: 500px) {
+		padding: 2rem .5rem 1rem;
+
+		.title {
+			padding-left: 1.5rem;
+		}
+	}
+
+	h1,h2,h3,h4,h5,p {
+		color: white;
+	}
+	
+	ul {
+		li {
+			list-style: none;
+
+			a {
+				color: lighten(hotpink, 20%);
+				font-size: 1.2rem;
+
+				i {
+					padding-right: 1rem;
+					font-size: 1.5rem;
+					color: lighten(hotpink, 30%);
+				}
+
+				@media (max-width: 500px) {
+					font-size: .8rem;
+
+					i {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
