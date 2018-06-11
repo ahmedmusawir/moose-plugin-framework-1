@@ -67,7 +67,7 @@ function moose_post_notice_start() {
 	$setup_styles->initialize();
 
 	//MAIN MENU INSTANCES
-	$setup_options = new JeffwayOptionMPF();
+	$setup_options = new MooseOptionMPF();
 
 	$frontend_display = new FrontendDisplayMPF();
 
@@ -98,7 +98,7 @@ function moose_post_notice_start() {
 	$social_shortcode = new MPFSocialShortcode();
 	
 	//ADD SOCIAL SHORTCODE 	
-	$social_shortcode = new MPFLoremShortcode();
+	$lorem_shortcode = new MPFLoremShortcode();
 
 	//SHORTCODE SUBMENU INSTANCES
 	$shortcode_submenu_options = new ShortcodeSubmenuOptionMPF();
@@ -115,11 +115,11 @@ moose_post_notice_start();
 
 // Activation
 require_once plugin_dir_path( __FILE__ ) . 'inc/Base/class-activate.php';
-register_activation_hook( __FILE__, array( 'MooseActivate', 'activate' ) );
+register_activation_hook( __FILE__, array( 'MPFActivate', 'activate' ) );
 
 // Activation
 require_once plugin_dir_path( __FILE__ ) . 'inc/Base/class-deactivate.php';
-register_activation_hook( __FILE__, array( 'MooseDeactivate', 'deactivate' ) );
+register_deactivation_hook( __FILE__, array( 'MPFDeactivate', 'deactivate' ) );
 
 
 

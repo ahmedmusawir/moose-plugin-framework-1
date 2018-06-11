@@ -3,7 +3,7 @@
 /**
 * Post Notice Class
 */
-class JeffwayOptionMPF extends SettingsCallbacks
+class MooseOptionMPF extends SettingsCallbacks
 {
 	public $options;
 
@@ -29,8 +29,8 @@ class JeffwayOptionMPF extends SettingsCallbacks
 		*/
 
 		add_menu_page( 
-			'JW Theme Options', 
-			'JW Options', 
+			'Moose Theme Options', 
+			'Moose Options', 
 			'administrator', 
 			'jw-option-mpf', 
 			array( $this, 'jwDisplaySettingsPage' ),

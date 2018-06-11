@@ -3,7 +3,7 @@
 /**
 * PLUGIN DEACTIVATION CLASS
 */
-class MooseDeactivate
+class MPFDeactivate
 {
 	function __construct()
 	{
@@ -13,6 +13,12 @@ class MooseDeactivate
 	public static function deactivate() {
 
 		flush_rewrite_rules();
+
+	   	global $wpdb;
+     	
+     	$table_name = $wpdb->prefix . 'MPF_First_Table';
+     	$sql = "DROP TABLE IF EXISTS $table_name";
+     	$wpdb->query($sql);			
 
 	}
 

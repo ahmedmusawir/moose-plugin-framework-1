@@ -9,7 +9,7 @@
 /**
 * MPF Options Display
 */
-class FrontendDisplayMPF extends JeffwayOptionMPF
+class FrontendDisplayMPF extends MooseOptionMPF
 {
 
 
