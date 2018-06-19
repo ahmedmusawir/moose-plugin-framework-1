@@ -21,7 +21,7 @@ define( "PLUGIN_DIR", ABSPATH . 'wp-content/plugins/jeffway-option-mpf' );
 require_once( plugin_dir_path( __FILE__ ) . 'class-enqueue.php' );
 
 //WPDb Testing
-require_once( plugin_dir_path( __FILE__ ) . '/inc/WPDb/class-wpdb-test.php' );
+require_once( plugin_dir_path( __FILE__ ) . '/inc/WPDox/class-wpdb-test.php' );
 
 //Widgets Main
 require_once( plugin_dir_path( __FILE__ ) . '/inc/Widgets/class-widget-main.php' );

@@ -29,8 +29,8 @@ class MooseOptionMPF extends SettingsCallbacks
 		*/
 
 		add_menu_page( 
-			'Moose Theme Options', 
-			'Moose Options', 
+			'MPF Theme Options', 
+			'MPF Options', 
 			'administrator', 
 			'jw-option-mpf', 
 			array( $this, 'jwDisplaySettingsPage' ),
