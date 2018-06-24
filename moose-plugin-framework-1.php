@@ -104,7 +104,7 @@ function moose_post_notice_start() {
 	$shortcode_submenu_options = new ShortcodeSubmenuOptionMPF();
 
 	//WPDB TESTING
-	$shortcode_submenu_options = new WPDBTesting();
+	$shortcode_submenu_options = new MPFWPHelpdesk();
 
 	//WIDGETS MAIN
 	$widgets = new WidgetMain();

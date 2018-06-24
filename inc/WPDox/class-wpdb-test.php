@@ -2,12 +2,13 @@
 /**
  * WP DB Tesing
  */
-class WPDBTesting
+class MPFWPHelpdesk
 {
 	
 	function __construct()
 	{
-		add_action( 'wp_footer', array(  $this, 'displayWBDbResults' ) );
+		add_action( 'wp_footer', array(  $this, 'displayWBDbResults' ), 110 );
+		// add_action( 'wp_footer', array(  $this, 'displayWBDbResults' ) );
 		// add_action( 'wp_head', array(  $this, 'displayWBDbResults' ) );
 	}
 
@@ -150,9 +151,9 @@ class WPDBTesting
 		echo '</pre>';
 
 		echo '<hr>';
-		echo '<h5>FROM wp_MPF_First_Table</h5> <br>';
-		echo '<h5>$wpdb->get_results( "SELECT * FROM wp_MPF_First_Table", OBJECT )</h5> <br>';
-		$results = $wpdb->get_results( 'SELECT * FROM wp_MPF_First_Table', OBJECT );
+		echo '<h5>FROM wp_helpdesk_table</h5> <br>';
+		echo '<h5>$wpdb->get_results( "SELECT * FROM wp_helpdesk_table", OBJECT )</h5> <br>';
+		$results = $wpdb->get_results( 'SELECT * FROM wp_helpdesk_table', OBJECT );
 		echo '<pre>';
 		// echo '<h5>print_r($result[2]->id)</h5><br>';
 		// print_r($results[2]->id) . '<br>';
@@ -169,27 +170,27 @@ class WPDBTesting
 
 		echo '</pre>';	
 
-		echo '<h5 id="create">CREATE TABLE wp_MPF_First_Table</h5> <a href="#mpf-header-box" class="btn btn-primary float-right">GO TO MENU</a><br>';
+		echo '<h5 id="create">CREATE TABLE wp_helpdesk_table</h5> <a href="#mpf-header-box" class="btn btn-primary float-right">GO TO MENU</a><br>';
 		echo '<pre style="background-color: #e0e0e0;">';
 		highlight_file('wpdb-create-table-code.php');
 		echo '</pre>';
 
-		echo '<h5 id="drop">DROP TABLE wp_MPF_First_Table</h5> <a href="#mpf-header-box" class="btn btn-primary float-right">GO TO MENU</a><br>';
+		echo '<h5 id="drop">DROP TABLE wp_helpdesk_table</h5> <a href="#mpf-header-box" class="btn btn-primary float-right">GO TO MENU</a><br>';
 		echo '<pre style="background-color: #e0e0e0;">';
 		highlight_file('wpdb-drop-table-code.php');
 		echo '</pre>';
 
-		echo '<h5 id="insert">INSERT INTO wp_MPF_First_Table</h5> <a href="#mpf-header-box" class="btn btn-primary float-right">GO TO MENU</a><br>';
+		echo '<h5 id="insert">INSERT INTO wp_helpdesk_table</h5> <a href="#mpf-header-box" class="btn btn-primary float-right">GO TO MENU</a><br>';
 		echo '<pre style="background-color: #e0e0e0;">';
 		highlight_file('wpdb-insert-code.php');
 		echo '</pre>';
 
-		echo '<h5 id="update">UPDATE INTO wp_MPF_First_Table</h5> <a href="#mpf-header-box" class="btn btn-primary float-right">GO TO MENU</a><br>';
+		echo '<h5 id="update">UPDATE INTO wp_helpdesk_table</h5> <a href="#mpf-header-box" class="btn btn-primary float-right">GO TO MENU</a><br>';
 		echo '<pre style="background-color: #e0e0e0;">';
 		highlight_file('wpdb-update-code.php');
 		echo '</pre>';
 
-		echo '<h5 id="delete">DELETE FROM wp_MPF_First_Table</h5> <a href="#mpf-header-box" class="btn btn-primary float-right">GO TO MENU</a><br>';
+		echo '<h5 id="delete">DELETE FROM wp_helpdesk_table</h5> <a href="#mpf-header-box" class="btn btn-primary float-right">GO TO MENU</a><br>';
 		echo '<pre style="background-color: #e0e0e0;">';
 		highlight_file('wpdb-delete-code.php');
 		echo '</pre>';
@@ -228,6 +229,11 @@ class WPDBTesting
 			echo '</pre>';
 			
 			
+			echo '<h5 id="settings-reg">WP SETTINGS Display Callback</h5> <a href="#mpf-header-box" class="btn btn-primary float-right">GO TO MENU</a> <br>';
+			echo '<pre style="background-color: #e0e0e0;">';
+			highlight_file('wp-settings-menu-display-callback-code.php');
+			echo '</pre>';
+
 			echo '<h5 id="settings-reg">WP SETTINGS Registration</h5> <a href="#mpf-header-box" class="btn btn-primary float-right">GO TO MENU</a> <br>';
 			echo '<pre style="background-color: #e0e0e0;">';
 			highlight_file('wp-settings-registration-code.php');
